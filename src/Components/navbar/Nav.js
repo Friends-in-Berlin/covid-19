@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import './nav.css';
 export class Nav extends Component {
     render() {
         return (
-            <div>
+            <div className="navbar">
                 <ul>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/news'>news</Link></li>
-                    <li><Link to='/protection'>protection</Link></li>
-                    <li><Link to='/warning'>warning</Link></li>
-                    <li><Link to='/support'>support</Link></li>
+                    <div className="nav-item"><li><Link className="link" to='/'>Home</Link></li></div>
+                    <div className="nav-item"><li><Link className="link" to='/news'>news</Link></li></div>
+                    <div className="nav-item"><li><Link className="link" to='/protection'>protection</Link></li></div>
+                    <div className="nav-item"><li><Link className="link" to='/warning'>warning</Link></li></div>
+                    <div className="nav-item"><li><Link className="link" to='/support'>support</Link></li></div>
                 </ul>
             </div>
         )
